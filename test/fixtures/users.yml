@@ -1,0 +1,77 @@
+# == Schema Information
+#
+# Table name: users
+#
+#  id                     :integer          not null, primary key
+#  active                 :boolean
+#  email                  :string
+#  confirmation_sent_at   :datetime
+#  confirmed_at           :datetime
+#  confirmation_token     :string
+#  encrypted_password     :string
+#  reset_password_token   :string
+#  reset_password_sent_at :datetime
+#  password_salt          :string
+#  first_name             :string
+#  last_name              :string
+#  description            :text
+#  image_file_name        :string
+#  image_content_type     :string
+#  image_file_size        :integer
+#  image_updated_at       :datetime
+#  image_processing       :boolean
+#  authentication_token   :string
+#  facebook_id            :string
+#  locale                 :string
+#  main_language          :string
+#  created_at             :datetime         not null
+#  updated_at             :datetime         not null
+#
+
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  active: false
+  email: MyString
+  confirmation_sent_at: 2016-12-12 20:36:58
+  confirmed_at: 2016-12-12 20:36:58
+  confirmation_token: MyString
+  encrypted_password: MyString
+  reset_password_token: MyString
+  reset_password_sent_at: 2016-12-12 20:36:58
+  password_salt: MyString
+  first_name: MyString
+  last_name: MyString
+  description: MyText
+  image_file_name: MyString
+  image_content_type: MyString
+  image_file_size: 1
+  image_updated_at: 2016-12-12 20:36:58
+  image_processing: false
+  authentication_token: MyString
+  facebook_id: MyString
+  locale: MyString
+  main_language: MyString
+
+two:
+  active: false
+  email: MyString
+  confirmation_sent_at: 2016-12-12 20:36:58
+  confirmed_at: 2016-12-12 20:36:58
+  confirmation_token: MyString
+  encrypted_password: MyString
+  reset_password_token: MyString
+  reset_password_sent_at: 2016-12-12 20:36:58
+  password_salt: MyString
+  first_name: MyString
+  last_name: MyString
+  description: MyText
+  image_file_name: MyString
+  image_content_type: MyString
+  image_file_size: 1
+  image_updated_at: 2016-12-12 20:36:58
+  image_processing: false
+  authentication_token: MyString
+  facebook_id: MyString
+  locale: MyString
+  main_language: MyString

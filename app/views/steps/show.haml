@@ -1,0 +1,5 @@
+%h1.ui.header
+  = @step.title
+%p= @step.description
+.sub.header= link_to @step.category.title, category_path(@step.category)
+%h3= link_to "View all", steps_path

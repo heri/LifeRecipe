@@ -1,0 +1,43 @@
+# == Schema Information
+#
+# Table name: steps
+#
+#  id          :integer          not null, primary key
+#  title       :string
+#  step_type   :string
+#  quantity    :string
+#  description :text
+#  parent_id   :integer
+#  duration    :time
+#  speed       :integer
+#  effort      :string
+#  notes       :text
+#  created_at  :datetime         not null
+#  updated_at  :datetime         not null
+#  category_id :integer
+#  user_id     :integer
+#
+
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  step_type: MyString
+  quantity: MyString
+  description: MyText
+  parent_id: 1
+  duration: 2016-12-12 20:37:23
+  speed: 1
+  effort: MyString
+  notes: MyText
+
+two:
+  title: MyString
+  step_type: MyString
+  quantity: MyString
+  description: MyText
+  parent_id: 1
+  duration: 2016-12-12 20:37:23
+  speed: 1
+  effort: MyString
+  notes: MyText

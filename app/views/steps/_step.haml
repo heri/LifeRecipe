@@ -1,0 +1,4 @@
+%h3.ui.header
+  = link_to step.title, step_path(step)
+%p= step.description
+.sub.header= link_to step.category.title, category_path(step.category)
