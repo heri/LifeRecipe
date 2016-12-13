@@ -37,7 +37,8 @@ class User < ActiveRecord::Base
   validates_presence_of    :password, :on=>:create
   validates_confirmation_of    :password, :on=>:create
 
-  # after_create :send_welcome_email
+  has_many :favoriter_relationships
+  has_many :favorited_steps, through:  :favoriter_relationships, class_name: "Step", foreign_key:  "step_id"
 
   has_attached_file :image, :styles => {
                       :medium => "288x288#",
