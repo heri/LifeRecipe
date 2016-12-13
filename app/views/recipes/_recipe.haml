@@ -1,0 +1,4 @@
+%h3.ui.header
+  = link_to recipe.title, recipe_path(recipe)
+%p= recipe.description
+.sub.header= link_to recipe.category.title, category_path(recipe.category)

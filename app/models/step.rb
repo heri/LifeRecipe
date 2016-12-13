@@ -19,11 +19,8 @@
 #
 
 class Step < ActiveRecord::Base
-  belongs_to :user
-  # has_many :received_testimonials, through: :provider, class_name: "Testimonials"
-  # has_many :conversations
+  acts_as_tree order: "position"
 
-  belongs_to :category
-
-  validates_presence_of :user_id
+  belongs_to :recipe
+  acts_as_list scope: :recipe
 end

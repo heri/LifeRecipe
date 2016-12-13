@@ -29,7 +29,6 @@ class UserDashboard < Administrate::BaseDashboard
     authentication_token: Field::String,
     facebook_id: Field::String,
     locale: Field::String,
-    steps: Field::HasMany,
     main_language: Field::SelectBasic.with_options({
       choices: ['En', 'Fr']
     }),
@@ -54,7 +53,6 @@ class UserDashboard < Administrate::BaseDashboard
     :first_name,
     :last_name,
     :description,
-    :steps,
   ].freeze
 
   # FORM_ATTRIBUTES

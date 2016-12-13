@@ -13,10 +13,8 @@ class StepDashboard < Administrate::BaseDashboard
       choices: ['Run', 'Swim', 'Cycle', 'Rest', 'Recover']
     }),
     category: Field::BelongsTo,
-    user: Field::BelongsTo,
     quantity: Field::String,
     description: Field::Text,
-    parent_id: Field::Number,
     duration: Field::DateTime,
     speed: Field::Number,
     effort: Field::SelectBasic.with_options({
@@ -41,11 +39,9 @@ class StepDashboard < Administrate::BaseDashboard
   SHOW_PAGE_ATTRIBUTES = [
     :title,
     :category,
-    :user,
     :step_type,
     :quantity,
     :description,
-    :parent_id,
     :duration,
     :speed,
     :effort,
@@ -58,11 +54,9 @@ class StepDashboard < Administrate::BaseDashboard
   FORM_ATTRIBUTES = [
     :title,
     :step_type,
-    :user,
     :category,
     :quantity,
     :description,
-    :parent_id,
     :duration,
     :speed,
     :effort,

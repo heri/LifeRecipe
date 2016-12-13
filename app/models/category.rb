@@ -10,9 +10,6 @@
 #
 
 class Category < ActiveRecord::Base
-  has_many :steps
+  has_many :recipes
   validates_presence_of    :title
-
-  
-
 end
